@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="start-screen">
+        <button id="start-btn">Start</button>
+    </div>
+    <div id="display-container">
+        <div class="header">
+
+            <div class="number-count">
+                <span class="question-number">
+                    1 of 10 questions
+                </span>
+            </div>
+            <div class="timer-container">
+                <i class="ri-timer-line"></i>
+                <span class="timer-left">10s</span>
+            </div> 
+        </div>
+        <div id="container">
+            
+        </div>
+        <button id="next-button">Next</button>
+    </div>
+    <div class="score-container hide">
+        <div class="user-score"> 
+            Score:
+        </div>
+        <button id="restart">Restart</button>
+    </div>
+    <script src="/static/apps.js"></script>
+
+{% endblock %}
+
+
